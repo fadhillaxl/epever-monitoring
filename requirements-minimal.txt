@@ -1,0 +1,10 @@
+# Solar Monitor - Minimal Requirements
+# Essential dependencies only - install with: pip install -r requirements-minimal.txt
+
+# Core dependencies (required)
+influxdb>=5.3.0,<6.0.0
+minimalmodbus>=1.0.0,<2.0.0
+pyserial>=3.5,<4.0.0
+
+# Optional but recommended
+python-dateutil>=2.8.0,<3.0.0

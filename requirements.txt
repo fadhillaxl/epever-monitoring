@@ -1,0 +1,51 @@
+# Solar Monitor Python Dependencies
+# Requirements for SolarTracer.py, logtracer.py, and InfluxConf.py
+
+# Core dependencies
+influxdb>=5.3.0,<6.0.0
+minimalmodbus>=1.0.0,<2.0.0
+pyserial>=3.5,<4.0.0
+
+# Optional but recommended
+python-dateutil>=2.8.0,<3.0.0
+pytz>=2021.1,<2024.0
+
+# Development and testing (optional)
+pytest>=6.0.0,<8.0.0
+pytest-cov>=2.10.0,<5.0.0
+black>=21.0.0,<24.0.0
+flake8>=3.8.0,<7.0.0
+
+# System monitoring (optional)
+psutil>=5.8.0,<6.0.0
+
+# Data processing (optional)
+numpy>=1.20.0,<2.0.0
+pandas>=1.3.0,<3.0.0
+
+# Web interface (optional - if you want to add a simple web server)
+flask>=2.0.0,<3.0.0
+flask-cors>=3.0.0,<4.0.0
+
+# Configuration management (optional)
+python-dotenv>=0.19.0,<1.0.0
+configparser>=5.0.0,<6.0.0
+
+# Logging and monitoring (optional)
+structlog>=21.0.0,<24.0.0
+colorama>=0.4.0,<1.0.0
+
+# Serial communication alternatives (if minimalmodbus has issues)
+# pymodbus>=3.0.0,<4.0.0
+
+# Database alternatives (if InfluxDB is not available)
+# sqlite3  # Built into Python
+# pymongo>=4.0.0,<5.0.0  # MongoDB alternative
+
+# Notes:
+# - influxdb 5.x is compatible with InfluxDB 1.x
+# - minimalmodbus requires pyserial for serial communication
+# - pyserial handles USB-to-serial device communication
+# - python-dateutil helps with timestamp parsing
+# - pytz handles timezone conversions
+# - Optional packages can be installed as needed

@@ -1,0 +1,58 @@
+===============================================================================
+                            SOLAR MONITOR - QUICK START
+===============================================================================
+
+TOOL Python
+pip install -r requirements.txt
+
+🚀 GET RUNNING IN 2 MINUTES:
+
+1. Navigate to solar-monitor directory:
+   cd /Users/mm/GitHub/epever-monitoring/solar-monitor
+
+2. Install dependencies:
+   npm install
+
+3. Setup environment:
+   cp env.example .env.local
+
+4. Start the application:
+   npm run dev
+
+5. Open in browser:
+   http://localhost:3000
+
+===============================================================================
+                              TROUBLESHOOTING
+===============================================================================
+
+❌ "Module not found" → npm install
+❌ "Build failed" → npm run build
+❌ "No data" → Check InfluxDB is running
+❌ "Port in use" → Use PORT=3001 npm run dev
+
+===============================================================================
+                              VERIFY IT'S WORKING
+===============================================================================
+
+✅ Health check: http://localhost:3000/api/health
+✅ Latest data: http://localhost:3000/api/solar/latest?measurement=solar_realtime
+✅ Dashboard: http://localhost:3000
+
+===============================================================================
+                              WHAT YOU'LL SEE
+===============================================================================
+
+📊 Dashboard Tab: Real-time solar data (refreshes every 30s)
+📈 Charts Tab: Historical performance data
+🔧 System Status Tab: Connection health
+
+===============================================================================
+                              NEED HELP?
+===============================================================================
+
+📖 Full guide: INSTALLATION_GUIDE.txt
+🐛 Check browser console for errors
+🔍 Verify InfluxDB: curl http://localhost:8086/health
+
+Your solar monitoring dashboard is ready! 🌞
